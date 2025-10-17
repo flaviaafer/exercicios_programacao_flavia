@@ -22,13 +22,14 @@ while salário <= 0:
     salário = float(input('Digite seu salário: '))
 
 estados_civis = ['s', 'c', 'v', 'd']
-estado_civil = input(f'Digite seu estado civil: ',estados_civis)
+estado_civil = input(f"Digite seu estado civil {estados_civis}: ").lower()
 while estado_civil not in estados_civis:
-    print('Por favor, digite uma das opções: ',estados_civis)
-    estado_civil = input('Digite seu estado civil: ',estados_civis)
+    print("Por favor, digite uma das opções:", estados_civis)
+    estado_civil = input(f"Digite seu estado civil {estados_civis}: ").lower()
+print("Estado civil válido:", estado_civil)
 
 print("---- Informações ----")
 print("Nome: ",nome)
 print("Idade: ",idade)
 print("Salário: ",salário)
-print("Estado Civel: ",estado_civil)
+print("Estado Civil: ",estado_civil)
